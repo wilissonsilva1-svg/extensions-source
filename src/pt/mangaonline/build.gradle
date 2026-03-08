@@ -1,10 +1,12 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
 ext {
-    extName = 'Manga Online'
-    extClass = '.MangaOnline'
-    themePkg = 'madara'
-    baseUrl = 'https://mangaonline.red'
-    overrideVersionCode = 2
-    isNsfw = false
+    appName = 'Tachiyomi: MangaLivre.blog'
+    pkgName = 'eu.kanade.tachiyomi.extension.pt.mangalivreblog'
+    extClass = '.MangaLivreBlog'
+    extVersionCode = 1
+    libVersion = '1.4'
 }
 
 apply from: "$rootDir/common.gradle"
